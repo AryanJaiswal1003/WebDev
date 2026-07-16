@@ -1,0 +1,281 @@
+<!-- *------------------------------------- -->
+<!--* HTML PICTURE TAG (<picture>) -->
+<!-- *---------------------------------------- -->
+
+<!--
+The <picture> element allows you to provide multiple
+versions of an image.
+
+The browser automatically selects the most appropriate
+image based on:
+
+1. Screen size.
+2. Device resolution.
+3. Supported image formats.
+
+The <picture> element is commonly used for
+responsive images.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Picture Tag</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align:center;
+            margin:20px;
+            background:#f5f5f5;
+            line-height:1.6;
+        }
+
+        img{
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,.2);
+            max-width:100%;
+            height:auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Picture Tag Example</h1>
+
+    <p>
+        The <strong>&lt;picture&gt;</strong> element allows browsers
+        to choose the most suitable image based on the
+        user's screen size or supported image format.
+    </p>
+
+    <hr>
+
+    <picture>
+
+        <!-- Display on screens up to 600px -->
+
+        <source
+            srcset="./images/js.png"
+            media="(max-width:600px)"
+        >
+
+        <!-- Display on screens up to 900px -->
+
+        <source
+            srcset="./images/css.png"
+            media="(max-width:900px)"
+        >
+
+        <!-- Default Image -->
+
+        <img
+            src="./images/html.png"
+            alt="HTML Logo"
+            width="400"
+            loading="lazy"
+        >
+
+    </picture>
+
+</body>
+</html>
+
+<!-- *------------------------------------- -->
+<!--* HOW THE <picture> TAG WORKS -->
+<!-- *---------------------------------------- -->
+
+<!--
+
+<picture>
+    <source>
+    <source>
+    <img>
+</picture>
+
+The browser checks each <source> from top to bottom.
+
+The first matching source is displayed.
+
+If none match, the browser displays
+the <img> element.
+
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* IMPORTANT ELEMENTS -->
+<!-- *---------------------------------------- -->
+
+<!--
+
+<picture>
+---------
+Container for multiple image sources.
+
+-------------------------------------------------
+
+<source>
+--------
+Specifies an alternative image.
+
+Common Attributes:
+
+srcset
+media
+type
+
+-------------------------------------------------
+
+<img>
+-----
+Fallback image.
+
+The <img> element is REQUIRED inside
+the <picture> element.
+
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* COMMON ATTRIBUTES
+<!-- *---------------------------------------- -->
+
+<!--
+
+srcset
+------
+
+Specifies one or more image files.
+
+Example:
+
+srcset="./images/html.png"
+
+-------------------------------------------------
+
+media
+-----
+
+Specifies the media condition.
+
+Example:
+
+media="(max-width:600px)"
+
+-------------------------------------------------
+
+type
+----
+
+Specifies the image MIME type.
+
+Examples:
+
+type="image/webp"
+
+type="image/png"
+
+type="image/jpeg"
+
+The browser ignores formats it
+does not support.
+
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* INTERVIEW QUESTIONS
+<!-- *---------------------------------------- -->
+
+<!--
+
+1. What is the purpose of the <picture> element?
+
+It provides multiple versions of an image,
+allowing the browser to choose the most
+appropriate one.
+
+-------------------------------------------------
+
+2. What is the difference between <picture> and <img>?
+
+<img>
+Displays a single image.
+
+<picture>
+Can provide multiple image sources
+for responsive design.
+
+-------------------------------------------------
+
+3. Is the <img> tag mandatory inside <picture>?
+
+Yes.
+
+The <img> element acts as the fallback image
+if none of the <source> elements match.
+
+-------------------------------------------------
+
+4. In what order does the browser check the sources?
+
+The browser checks the <source> elements
+from top to bottom.
+
+The first matching source is used.
+
+-------------------------------------------------
+
+5. What are the common attributes of the <source> element?
+
+• srcset
+• media
+• type
+
+-------------------------------------------------
+
+6. When should you use the <picture> element?
+
+Use it when:
+• Building responsive websites.
+• Serving different image formats.
+• Optimizing images for different screen sizes.
+• Improving website performance.
+
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* ADVANCED EXAMPLE (Different Formats)
+<!-- *---------------------------------------- -->
+
+<!--
+
+<picture>
+
+    <source
+        srcset="image.webp"
+        type="image/webp"
+    >
+
+    <source
+        srcset="image.png"
+        type="image/png"
+    >
+
+    <img
+        src="image.png"
+        alt="Example Image"
+    >
+
+</picture>
+
+-->

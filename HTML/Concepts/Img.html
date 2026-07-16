@@ -1,0 +1,356 @@
+<!-- *------------------------------------- -->
+<!--* HTML IMAGE TAG (<img>)
+<!-- *---------------------------------------- -->
+
+<!--
+The <img> tag is used to embed images into a webpage.
+
+Unlike most HTML elements, the <img> tag is a self-closing (void) element,
+meaning it does not require a closing tag.
+
+Common Uses:
+1. Display images.
+2. Create clickable images.
+3. Create image maps.
+4. Improve performance using lazy loading.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image Tag</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:20px;
+            background:#f5f5f5;
+        }
+
+        img{
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Image Tag Example</h1>
+
+    <p>
+        The <strong>&lt;img&gt;</strong> tag is used to display images on a webpage.
+        Images can also act as hyperlinks or contain clickable regions using image maps.
+    </p>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- Simple Clickable Image -->
+    <!-- ============================= -->
+
+    <h2>1. Clickable Image</h2>
+
+    <a
+        href="https://www.youtube.com/watch?v=ydYDqZQpim8"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Watch a wildlife documentary"
+    >
+
+        <img
+            src="./images/html.png"
+            alt="HTML Logo"
+            width="250"
+            height="250"
+            loading="lazy"
+        >
+
+    </a>
+
+    <br><br>
+
+    <!-- ============================= -->
+    <!-- Image Map -->
+    <!-- ============================= -->
+
+    <h2>2. Image Map</h2>
+
+    <img
+        src="./images/mern.jpg"
+        alt="Technology Roadmap"
+        usemap="#tech-map"
+        width="450"
+        height="250"
+    >
+
+    <map name="tech-map">
+
+        <area
+            shape="rect"
+            coords="80,40,180,150"
+            href="https://www.youtube.com/watch?v=6zrn4-FfbXw"
+            target="_blank"
+            alt="Wildlife Video"
+        >
+
+        <!-- Examples -->
+
+        <!--
+        <area
+            shape="circle"
+            coords="125,125,50"
+            href="https://www.youtube.com/watch?v=VIDEO_ID"
+            alt="Circle Area"
+        >
+
+        <area
+            shape="poly"
+            coords="20,20,80,40,120,120"
+            href="https://www.youtube.com/watch?v=VIDEO_ID"
+            alt="Polygon Area"
+        >
+        -->
+
+    </map>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- More Image Examples -->
+    <!-- ============================= -->
+
+    <h2>3. Different Images</h2>
+
+    <img
+        src="./images/css.png"
+        alt="CSS Logo"
+        width="150"
+        height="150"
+        loading="lazy"
+    >
+
+    <img
+        src="./images/js.png"
+        alt="JavaScript Logo"
+        width="150"
+        height="150"
+        loading="lazy"
+    >
+
+    <img
+        src="./images/React1.png"
+        alt="React Logo"
+        width="150"
+        height="150"
+        loading="lazy"
+    >
+
+    <img
+        src="./images/Mongodb1.png"
+        alt="MongoDB Logo"
+        width="150"
+        height="150"
+        loading="lazy"
+    >
+
+</body>
+</html>
+
+<!-- *------------------------------------- -->
+<!--* IMPORTANT ATTRIBUTES OF <img> -->
+<!-- *---------------------------------------- -->
+<!--
+src
+---
+Specifies the image path.
+
+Example:
+src="./images/html.png"
+
+-------------------------------------------------
+
+alt
+---
+Provides alternative text if the image cannot load.
+
+Also improves accessibility and SEO.
+
+Example:
+alt="HTML Logo"
+
+-------------------------------------------------
+
+width & height
+--------------
+Specify the image dimensions.
+
+Example:
+width="250"
+height="250"
+
+-------------------------------------------------
+
+loading
+-------
+Specifies how the browser loads images.
+
+Values:
+eager (default)
+lazy
+
+Example:
+loading="lazy"
+
+-------------------------------------------------
+
+title
+-----
+Displays tooltip text when hovering over the image.
+
+-------------------------------------------------
+
+usemap
+------
+Associates an image with an image map.
+
+Example:
+
+<img src="image.png" usemap="#map">
+
+<map name="map">
+    ...
+</map>
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* DEPRECATED IMAGE ATTRIBUTES
+<!-- *---------------------------------------- -->
+
+<!--
+The following attributes are deprecated
+and should NOT be used:
+
+align
+border
+hspace
+vspace
+
+Use CSS instead.
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* BEST PRACTICE
+<!-- *---------------------------------------- -->
+
+<!--
+❌ Bad
+
+<img
+    src="penguin.jpg"
+    alt="image"
+>
+
+✔ Good
+
+<img
+    src="penguin.jpg"
+    alt="A Rockhopper Penguin standing on a beach."
+>
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* INTERVIEW QUESTIONS
+<!-- *---------------------------------------- -->
+
+<!--
+1. How can you make an image responsive?
+
+Using CSS:
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+-------------------------------------------------
+
+2. How do you create a clickable image?
+
+Wrap the <img> tag inside an <a> tag.
+
+Example:
+
+<a href="page.html">
+
+    <img src="image.png" alt="Image">
+
+</a>
+
+-------------------------------------------------
+
+3. What is the difference between relative and absolute paths?
+
+Relative Path:
+--------------
+./images/html.png
+
+Absolute URL:
+-------------
+https://example.com/images/html.png
+
+-------------------------------------------------
+
+4. Why is the alt attribute important?
+
+• Improves accessibility.
+• Helps screen readers.
+• Displays text if the image fails to load.
+• Improves SEO.
+
+-------------------------------------------------
+
+5. What is lazy loading?
+
+loading="lazy"
+
+It delays loading images until they are close to the user's viewport,
+improving page loading performance.
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* ADVANCED : RESPONSIVE IMAGES
+<!-- *---------------------------------------- -->
+
+<!--
+
+<img
+    src="./images/html.png"
+    alt="Responsive HTML Image"
+
+    srcset="
+        ./images/html-400.png   400w,
+        ./images/html-600.png   600w,
+        ./images/html-800.png   800w,
+        ./images/html-1000.png 1000w
+    "
+
+    sizes="
+        (max-width:600px) 400px,
+        (max-width:800px) 600px,
+        (max-width:1100px) 800px,
+        1000px
+    "
+>
+
+-->

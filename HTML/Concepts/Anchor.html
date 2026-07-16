@@ -1,0 +1,373 @@
+<!-- *------------------------------------- -->
+<!--* HTML ANCHOR TAG (<a>)
+<!-- *---------------------------------------- -->
+
+<!--
+The <a> (anchor) tag is used to create hyperlinks.
+It allows users to navigate:
+1. To another webpage.
+2. To another section of the same webpage.
+3. To download a file.
+4. To send an email.
+5. To make a phone call.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Anchor Tag</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Anchor Tag Example</h1>
+
+    <p>
+        The HTML <strong>&lt;a&gt;</strong> tag is used to create hyperlinks.
+        Links can navigate to another webpage, another section of the same page,
+        download files, open the user's email application, or even start a phone call.
+    </p>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- External Link -->
+    <!-- ============================= -->
+
+    <h2>1. External Link</h2>
+
+    <a
+        href="https://www.w3schools.com/html/html_links.asp"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Learn more about HTML links"
+        id="html-link"
+        class="external-link"
+    >
+        Learn HTML Links
+    </a>
+
+    <br><br>
+
+    <!-- ============================= -->
+    <!-- Internal Link -->
+    <!-- ============================= -->
+
+    <h2>2. Internal Link</h2>
+
+    <a href="#services">
+        Go to Services Section
+    </a>
+
+    <br><br>
+
+    <!-- ============================= -->
+    <!-- Download Link -->
+    <!-- ============================= -->
+
+    <h2>3. Download Link</h2>
+
+    <a href="sample.pdf" download>
+        Download Sample PDF
+    </a>
+
+    <br><br>
+
+    <!-- ============================= -->
+    <!-- Email Link -->
+    <!-- ============================= -->
+
+    <h2>4. Email Link</h2>
+
+    <a href="mailto:example@gmail.com">
+        Send an Email
+    </a>
+
+    <br><br>
+
+    <!-- ============================= -->
+    <!-- Phone Link -->
+    <!-- ============================= -->
+
+    <h2>5. Phone Link</h2>
+
+    <a href="tel:+1234567890">
+        Call Us
+    </a>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- Target Section -->
+    <!-- ============================= -->
+
+    <h2 id="services">Our Services</h2>
+
+    <p>
+        This section demonstrates how an internal link works.
+        Clicking on "Go to Services Section" scrolls smoothly to this section.
+    </p>
+
+</body>
+</html>
+
+<!-- *------------------------------------- -->
+<!--* HTML ANCHOR TAG - ATTRIBUTES
+<!-- *---------------------------------------- -->
+
+<!--
+href
+-----
+Specifies the URL or destination the link points to.
+
+Examples:
+href="https://example.com"
+href="#services"
+href="mailto:example@gmail.com"
+href="tel:+1234567890"
+
+-------------------------------------------------
+
+target
+-------
+Specifies where the linked document opens.
+
+Common Values:
+_self   -> Opens in the same tab (default)
+_blank  -> Opens in a new tab
+
+-------------------------------------------------
+
+rel
+---
+Describes the relationship between the current page
+and the linked page.
+
+When using target="_blank",
+always use:
+rel="noopener noreferrer"
+
+-------------------------------------------------
+
+download
+--------
+Suggests that the linked resource should be downloaded
+instead of opened.
+
+Example:
+<a href="sample.pdf" download>Download PDF</a>
+
+-------------------------------------------------
+
+title
+-----
+Displays additional information when the user hovers
+over the link.
+
+-------------------------------------------------
+
+id
+--
+Assigns a unique identifier.
+
+Useful for linking to a section of the same webpage.
+
+Example:
+<h2 id="services">Services</h2>
+
+<a href="#services">Go to Services</a>
+
+-------------------------------------------------
+
+class
+-----
+Assigns one or more classes for styling or JavaScript.
+
+-------------------------------------------------
+
+style
+-----
+Applies inline CSS.
+
+-------------------------------------------------
+
+tabindex
+--------
+Defines keyboard navigation order.
+
+-------------------------------------------------
+
+accesskey
+---------
+Defines a keyboard shortcut.
+
+-------------------------------------------------
+
+aria-*
+------
+Accessibility attributes.
+
+Example:
+aria-label="Visit Home Page"
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* INTERVIEW QUESTIONS
+<!-- *---------------------------------------- -->
+
+<!--
+1. How can you create a link within the same webpage?
+
+Use the id attribute on the target element
+and reference it using #id.
+
+Example:
+
+<h2 id="about">About</h2>
+
+<a href="#about">Go to About</a>
+
+-------------------------------------------------
+
+2. What is the difference between Relative and Absolute URLs?
+
+Relative URL:
+--------------
+Points relative to the current webpage.
+
+Examples:
+about.html
+images/logo.png
+pages/contact.html
+
+Absolute URL:
+--------------
+Contains the complete web address.
+
+Example:
+https://www.example.com/about
+
+-------------------------------------------------
+
+3. How does the download attribute work?
+
+The download attribute suggests that the browser
+should download the linked resource instead of opening it.
+
+Example:
+
+<a href="notes.pdf" download>
+    Download Notes
+</a>
+
+-------------------------------------------------
+
+4. How do you open the user's email application?
+
+Use the mailto: protocol.
+
+Example:
+
+<a href="mailto:example@gmail.com">
+    Send Email
+</a>
+
+-------------------------------------------------
+
+5. How do you create a clickable phone number?
+
+Use the tel: protocol.
+
+Example:
+
+<a href="tel:+1234567890">
+    Call Us
+</a>
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* BONUS NOTES
+<!-- *---------------------------------------- -->
+
+<!--
+1. Should attribute values be inside quotes?
+
+✔ Best Practice:
+Always use quotes around attribute values.
+
+Correct:
+
+<a href="https://www.mozilla.org">
+    Mozilla
+</a>
+
+Although HTML allows quotes to be omitted in some
+cases, using quotes improves readability and avoids errors.
+
+-------------------------------------------------
+
+2. Single Quotes vs Double Quotes
+
+Both are valid.
+
+Single Quotes:
+
+<a href='https://www.example.com'>
+    Example
+</a>
+
+Double Quotes:
+
+<a href="https://www.example.com">
+    Example
+</a>
+
+❌ Never mix them.
+
+Wrong:
+
+<a href="https://www.example.com'>
+    Example
+</a>
+
+-------------------------------------------------
+
+3. Using Quotes Inside Attribute Values
+
+If you use double quotes outside,
+you can use single quotes inside.
+
+Example:
+
+<a
+    href="https://www.example.com"
+    title="Isn't this fun?"
+>
+    Example Link
+</a>
+
+If necessary, special characters can be written using HTML entities.
+
+Example:
+
+<a
+    href="https://www.example.com"
+    title="Isn&quot;t this fun?"
+>
+    A link to my &lt;example&gt; page.
+</a>
+-->

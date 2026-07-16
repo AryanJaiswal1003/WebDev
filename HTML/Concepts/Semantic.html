@@ -1,0 +1,440 @@
+<!-- *------------------------------------- -->
+<!--* HTML5 SEMANTIC ELEMENTS
+<!-- *---------------------------------------- -->
+
+<!--
+Semantic HTML elements clearly describe the meaning
+of their content to both browsers and developers.
+
+They improve:
+
+1. Readability
+2. Accessibility
+3. SEO
+4. Code Maintenance
+
+Examples:
+<header>
+<nav>
+<main>
+<section>
+<article>
+<aside>
+<footer>
+
+Unlike semantic elements, non-semantic elements
+such as <div> and <span> do not describe
+their content.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Elements</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:20px;
+            background:#f5f5f5;
+            line-height:1.7;
+        }
+
+        header,
+        nav,
+        section,
+        article,
+        aside,
+        footer{
+            border:1px solid #ccc;
+            padding:15px;
+            margin:15px 0;
+            border-radius:8px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+            padding:0;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:black;
+        }
+
+        button{
+            padding:8px 18px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>My Portfolio Website</h1>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">About</a></li>
+
+                <li><a href="#">Projects</a></li>
+
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Hero Section</h2>
+
+            <p>
+                Welcome to my portfolio website.
+                Here you'll find information about me,
+                my projects, and my skills.
+            </p>
+
+            <button>Explore Projects</button>
+
+        </section>
+
+        <article>
+
+            <h2>Latest Article</h2>
+
+            <p>
+                Semantic HTML makes websites easier
+                to understand for users, search engines,
+                and assistive technologies.
+            </p>
+
+        </article>
+
+        <aside>
+
+            <h3>Related Resources</h3>
+
+            <ul>
+
+                <li>HTML Basics</li>
+
+                <li>CSS Fundamentals</li>
+
+                <li>JavaScript Essentials</li>
+
+            </ul>
+
+        </aside>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
+
+<!-- *------------------------------------- -->
+<!--* SEMANTIC vs NON-SEMANTIC ELEMENTS
+<!-- *---------------------------------------- -->
+
+<!--
+
+Semantic Elements
+-----------------
+
+<header>
+
+<nav>
+
+<main>
+
+<section>
+
+<article>
+
+<aside>
+
+<footer>
+
+These elements describe the purpose of
+their content.
+
+=================================================
+
+Non-Semantic Elements
+---------------------
+
+<div>
+
+<span>
+
+These elements do not describe the content.
+They are mainly used for styling or scripting.
+
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* COMMON SEMANTIC ELEMENTS
+<!-- *---------------------------------------- -->
+
+<!--
+
+<header>
+---------
+Represents introductory content or
+navigation links.
+
+-------------------------------------------------
+
+<nav>
+------
+Contains navigation links.
+
+-------------------------------------------------
+
+<main>
+-------
+Represents the primary content
+of the webpage.
+
+There should only be ONE <main>
+element per page.
+
+-------------------------------------------------
+
+<section>
+----------
+Groups related content together.
+
+-------------------------------------------------
+
+<article>
+----------
+Represents independent,
+self-contained content.
+
+Examples:
+
+• Blog Post
+
+• News Article
+
+• Forum Post
+
+-------------------------------------------------
+
+<aside>
+--------
+Contains related or additional content.
+
+Examples:
+
+• Sidebar
+
+• Advertisements
+
+• Related Links
+
+-------------------------------------------------
+
+<footer>
+---------
+Represents footer information.
+
+Examples:
+
+• Copyright
+
+• Contact Information
+
+• Social Media Links
+
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* WHY USE SEMANTIC HTML?
+<!-- *---------------------------------------- -->
+
+<!--
+
+Advantages
+
+• Improves code readability.
+
+• Improves SEO.
+
+• Improves accessibility.
+
+• Helps screen readers understand
+  page structure.
+
+• Makes maintenance easier.
+
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* INTERVIEW QUESTIONS
+<!-- *---------------------------------------- -->
+
+<!--
+
+1. What are Semantic HTML elements?
+
+Semantic elements clearly describe
+the purpose of their content.
+
+-------------------------------------------------
+
+2. Give examples of Semantic HTML elements.
+
+<header>
+
+<nav>
+
+<main>
+
+<section>
+
+<article>
+
+<aside>
+
+<footer>
+
+-------------------------------------------------
+
+3. What is the difference between
+Semantic and Non-Semantic elements?
+
+Semantic:
+
+Describe their meaning.
+
+Examples:
+
+<header>
+
+<footer>
+
+<section>
+
+Non-Semantic:
+
+Do not describe content.
+
+Examples:
+
+<div>
+
+<span>
+
+-------------------------------------------------
+
+4. Why should Semantic HTML be used?
+
+• Better SEO
+
+• Better Accessibility
+
+• Cleaner Code
+
+• Easier Maintenance
+
+-------------------------------------------------
+
+5. Can a webpage have multiple <main> elements?
+
+No.
+
+A webpage should contain only one
+<main> element.
+
+-------------------------------------------------
+
+6. What is the difference between
+<section> and <article>?
+
+<section>
+
+Groups related content.
+
+<article>
+
+Represents independent,
+self-contained content.
+
+-------------------------------------------------
+
+7. When should you use <aside>?
+
+Use it for related content like:
+
+• Sidebar
+
+• Advertisements
+
+• Related Articles
+
+• Quick Links
+
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* BONUS: PAGE LAYOUT USING SEMANTIC HTML
+<!-- *---------------------------------------- -->
+
+<!--
+
+<header>
+    <nav>
+
+    </nav>
+</header>
+
+<main>
+    <section>
+
+    </section>
+
+    <article>
+
+    </article>
+
+    <aside>
+
+    </aside>
+
+</main>
+
+<footer>
+
+</footer>
+
+-->

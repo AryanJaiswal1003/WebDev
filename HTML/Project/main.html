@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Discover the wonders of wildlife through breathtaking photography, conservation stories, and nature education with Wild Earth.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Wild Earth">
+    <meta name="theme-color" content="#2E8B57">
+    <title>Wild Earth | Discover the Wonders of Wildlife</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./Images/logo.webp" type="image/webp">
+
+    <style>
+        /* ===========================
+                GENERAL STYLING
+        =========================== */
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: #efefef;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #efefef;
+            color: #222;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ===========================
+                HEADINGS
+        =========================== */
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        h2,
+        h3 {
+            font-weight: 700;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #2e8b57;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .brand-mark {
+            font-size: 1.4rem;
+        }
+
+        /* ===========================
+                TEXT
+        =========================== */
+
+        p,
+        li,
+        label {
+            letter-spacing: 0.02em;
+            line-height: 1.7;
+        }
+
+        /* ===========================
+                LINKS
+        =========================== */
+
+        a {
+            color: #006400;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===========================
+                BUTTONS
+        =========================== */
+
+        button {
+            cursor: pointer;
+            padding: 8px 18px;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+
+        /* ===========================
+                IMAGES
+        =========================== */
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===========================
+                HEADER
+        =========================== */
+
+        header {
+            margin-bottom: 30px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        /* ===========================
+                HERO
+        =========================== */
+
+        main {
+            margin-bottom: 40px;
+        }
+
+        .hero-content {
+            margin-bottom: 20px;
+        }
+
+        /* ===========================
+                ABOUT
+        =========================== */
+
+        .about-section {
+            margin-bottom: 40px;
+        }
+
+        .about-knowledge {
+            margin-bottom: 15px;
+        }
+
+        progress {
+            width: 250px;
+            height: 18px;
+        }
+
+        /* ===========================
+                SERVICES
+        =========================== */
+
+        .service-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-gallery figure {
+            margin: 0;
+        }
+
+        figcaption {
+            margin-top: 8px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* ===========================
+                BLOG
+        =========================== */
+
+        .blog-section {
+            margin-top: 40px;
+        }
+
+        .blog-divider {
+            width: 70%;
+            border: none;
+            border-top: 1px solid #bdbdbd;
+            margin: 25px auto;
+        }
+
+        /* ===========================
+                AUDIO
+        =========================== */
+
+        audio {
+            margin-top: 15px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* ===========================
+                SUPPORT
+        =========================== */
+
+        .support-section ul {
+            padding-left: 20px;
+        }
+
+        /* ===========================
+                CONTACT
+        =========================== */
+
+        .contact-section {
+            margin-top: 40px;
+        }
+
+        .contact-section iframe {
+            width: 100%;
+            border: 0;
+            margin-top: 15px;
+        }
+
+        /* ===========================
+                FORM
+        =========================== */
+
+        form {
+            margin-top: 25px;
+        }
+
+        input,
+        textarea {
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            width: 100%;
+            max-width: 400px;
+            font-family: inherit;
+        }
+
+        /* ===========================
+                FOOTER
+        =========================== */
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="logo">
+            <a class="brand" href="#" aria-label="Wild Earth Home">
+                <img src="./Images/logo.webp" alt="Wild Earth Logo" width="250" height="72" decoding="async">
+            </a>
+        </div>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Wildlife</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Conservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <main>
+        <section class="hero-content">
+            <h1>Discover the Wonders of Wildlife 🦁🌿</h1>
+            <p>
+                Experience the beauty of nature and learn about the incredible
+                wildlife that shares our planet.
+            </p>
+
+            <button type="button">See My Works</button>
+            <a href="https://www.youtube.com/@NatGeo" target="_blank" rel="noopener noreferrer">
+
+                Visit YouTube
+
+            </a>
+        </section>
+
+        <!-- Hero Image -->
+
+        <section class="hero-image">
+            <figure>
+                <img src="./Images/hero-image.webp"
+                    alt="African wildlife featuring elephants, lions, giraffes and beautiful natural landscapes"
+                    width="500" height="281" fetchpriority="high" decoding="async">
+            </figure>
+        </section>
+    </main>
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>About Wild Earth 🌍</h2>
+        <p>
+            Welcome to Wild Earth, a place where nature comes alive through stunning wildlife stories, breathtaking
+            photography, and educational content.
+        </p>
+
+        <p>
+            Wild Earth is dedicated to showcasing the incredible diversity of animals found across forests, mountains,
+            deserts, oceans, and grasslands. Our goal
+            is to inspire people to appreciate wildlife and understand the importance of protecting endangered species
+            and their natural habitats.
+        </p>
+
+        <p>
+            Whether you're a student, photographer, traveler, or wildlife enthusiast, you'll discover fascinating facts,
+            amazing visuals, and conservation stories
+            from around the world.
+        </p>
+
+        <h2>My Wildlife Knowledge</h2>
+
+        <div class="about-knowledge">
+            <label for="wildlife-photography">Wildlife Photography:</label>
+            <progress id="wildlife-photography" max="100" value="90"
+                aria-label="Wildlife Photography Skill">90%</progress>
+        </div>
+
+        <div class="about-knowledge">
+            <label for="animal-behaviour">Animal Behaviour:</label>
+            <progress id="animal-behaviour" max="100" value="85" aria-label="Animal Behaviour Skill">85%</progress>
+        </div>
+
+        <div class="about-knowledge">
+            <label for="nature-conservation">Nature Conservation:</label>
+            <progress id="nature-conservation" max="100" value="80"
+                aria-label="Nature Conservation Skill">80%</progress>
+        </div>
+
+        <div class="about-knowledge">
+            <label for="wildlife-research">Wildlife Research:</label>
+            <progress id="wildlife-research" max="100" value="94" aria-label="Wildlife Research Skill">94%</progress>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="services-section">
+        <h2>Our Services</h2>
+
+        <div class="service-gallery">
+
+            <figure>
+                <img src="./Images/img_1.webp" alt="African Wildlife featuring lions, elephants, giraffes and zebras"
+                    width="300" height="200" loading="lazy" decoding="async">
+                <figcaption>African Wildlife</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./Images/img_2.webp" alt="Jungle Animals including tiger, leopard, bear and deer" width="300"
+                    height="200" loading="lazy" decoding="async">
+                <figcaption>Jungle Animals</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./Images/img_3.webp" alt="Marine Life with dolphins, whales, sharks and sea turtles"
+                    width="300" height="200" loading="lazy" decoding="async">
+                <figcaption>Marine Life</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./Images/img_4.webp" alt="Birds of the World including eagles, parrots, owls and flamingos"
+                    width="300" height="200" loading="lazy" decoding="async">
+                <figcaption>Birds of the World</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./Images/img_5.webp" alt="Endangered Species including panda, snow leopard and black rhino"
+                    width="300" height="200" loading="lazy" decoding="async">
+                <figcaption>Endangered Species</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./Images/img_6.webp" alt="Wildlife Photography capturing animals in their natural habitat"
+                    width="300" height="200" loading="lazy" decoding="async">
+                <figcaption>Wildlife Photography</figcaption>
+            </figure>
+
+        </div>
+    </section>
+
+    <!-- Our Blog Section -->
+    <section class="blog-section">
+        <h2>Our Blogs</h2>
+
+        <article>
+            <h3>Explore Nature Through Wildlife Adventures</h3>
+            <p>
+                Nature is home to millions of fascinating species, each playing a vital role in maintaining ecological
+                balance.
+                Wildlife teaches us patience, survival, adaptation, and the importance of biodiversity.
+            </p>
+
+            <hr class="blog-divider">
+            <section>
+                <h3>The Beauty of Wildlife</h3>
+                <p>
+                    Every ecosystem is filled with remarkable creatures that have evolved unique skills for survival.
+                    From the fastest cheetah to the largest blue whale, wildlife never fails to amaze us.
+                </p>
+            </section>
+
+            <hr class="blog-divider">
+            <section>
+                <h3>Protecting Endangered Species</h3>
+                <p>
+                    Many species today face threats due to habitat destruction, climate change, and illegal hunting.
+                    Conservation efforts help ensure these magnificent animals continue to thrive for future
+                    generations.
+                </p>
+            </section>
+
+            <hr class="blog-divider">
+            <section>
+                <h3>Wildlife Photography</h3>
+                <p>
+                    Wildlife photography captures unforgettable moments in nature.
+                    It encourages awareness and appreciation for the incredible diversity found across our planet.
+                </p>
+            </section>
+
+            <hr class="blog-divider">
+            <section>
+                <h3>Importance of Forests</h3>
+                <p>
+                    Healthy forests provide food, shelter, and breeding grounds for countless species.
+                    Protecting forests means protecting wildlife.
+                </p>
+            </section>
+
+            <hr class="blog-divider">
+            <section>
+                <h3>Amazing Wildlife Facts</h3>
+
+                <ul>
+                    <li>A tiger's roar can be heard nearly 3 kilometers away.</li>
+                    <li>Elephants communicate using low-frequency sounds.</li>
+                    <li>Dolphins recognize themselves in mirrors.</li>
+                    <li>Owls can rotate their heads up to 270 degrees.</li>
+                    <li>Octopuses have three hearts.</li>
+                </ul>
+            </section>
+
+            <hr class="blog-divider">
+            <section>
+                <h3>Why Wildlife Conservation Matters</h3>
+                <p>Conserving wildlife protects ecosystems, supports biodiversity, and ensures that future generations
+                    can continue experiencing Earth's natural beauty.</p>
+                <p>Every small effort—planting trees, reducing pollution, and supporting conservation programs—helps
+                    preserve wildlife.</p>
+            </section>
+
+            <hr class="blog-divider">
+            <p><strong>Thank You Message</strong></p>
+            <p>
+                <em>
+                    Thank you for exploring the wonderful world of wildlife with us.
+                    Together, we can create a safer future for every species on Earth.
+                </em>
+            </p>
+        </article>
+    </section>
+
+    <!-- Podcast Section -->
+    <section class="podcast-section">
+        <p>
+            <em>
+                I have also added <strong>Nature's Sound</strong> for you to relax with the soothing sounds of forests,
+                birds, and flowing streams as you explore the wonders of wildlife.
+            </em>
+        </p>
+
+        <audio controls preload="none">
+            <source src="./Audio/sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section">
+        <h2>Support Message</h2>
+        <h3>If you enjoyed learning about wildlife:</h3>
+
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer">
+                    Share this website with friends.
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.worldwildlife.org/" target="_blank" rel="noopener noreferrer">
+                    Spread awareness about wildlife conservation.
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.unep.org/" target="_blank" rel="noopener noreferrer">
+                    Protect forests and natural habitats.
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.nationalgeographic.com/animals" target="_blank" rel="noopener noreferrer">
+                    Respect animals in their natural environment.
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.iucn.org/" target="_blank" rel="noopener noreferrer">
+                    Support wildlife conservation organizations.
+                </a>
+            </li>
+        </ul>
+
+        <p>
+            <strong>
+                Every action counts in protecting our planet.
+                Keep going, because you're capable of supporting nature.
+            </strong>
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+
+        <h2>Feel Free to Contact Us</h2>
+        <p><strong>Wild Earth Wildlife Organization</strong></p>
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:contact@wildearth.org">
+                contact@wildearth.org
+            </a>
+        </p>
+
+        <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+        <p><strong>Location:</strong></p>
+        <iframe title="Jim Corbett National Park Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3470.771257382798!2d78.88063577512963!3d29.
+                55215507517525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a24ffffffffff%3A0x3017b72d3d253fd7!
+                2sJim%20Corbett%20National%20Park!5e0!3m2!1sen!2sin!4v1784136066907!5m2!1sen!2sin" width="100%"
+            height="450" style="border:0;" loading="lazy" allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+
+        <!-- Form Section -->
+        <form>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" />
+            </div>
+            <br />
+
+            <div>
+                <label for="email">Enter your Email</label>
+                <input type="email" id="email" />
+            </div>
+            <br />
+
+            <div>
+                <label for="textarea">Message</label>
+                <textarea name="" id="textarea" cols="25" rows="6"></textarea>
+            </div>
+            <br />
+
+            <input type="submit" value="submit" />
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; 2026 Wild Earth</p>
+        <p><em>"Protect Nature, Protect Wildlife, Protect Our Future."</em></p>
+    </footer>
+</body>
+
+</html>

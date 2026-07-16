@@ -1,0 +1,226 @@
+<!-- *------------------------------------- -->
+<!--* HTML PARAGRAPH ELEMENT (<p>) -->
+<!-- *---------------------------------------- -->
+
+<!--
+The <p> tag defines a paragraph in HTML.
+
+A paragraph is a block-level element, meaning it
+starts on a new line and occupies the full available width.
+
+Browsers automatically add space (margin)
+before and after each paragraph.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Paragraph</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:20px;
+            background:#f5f5f5;
+            line-height:1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Paragraph Example</h1>
+
+    <p>
+        HTML paragraphs are used to organize text into readable sections.
+        Browsers automatically add spacing before and after each paragraph,
+        making the content easier to read.
+    </p>
+
+    <p>
+        The <strong>&lt;br&gt;</strong> tag inserts a single line break
+        without creating a new paragraph.
+        <br>
+        This text appears on the next line.
+    </p>
+
+    <p>
+        This is an example of
+        <strong>bold text</strong>
+        using the <strong>&lt;strong&gt;</strong> element.
+    </p>
+
+    <!-- ============================= -->
+    <!-- HTML Comment -->
+    <!-- ============================= -->
+
+    <!--
+    This paragraph is commented out,
+    so it will not appear in the browser.
+
+    <p>
+        This text will not be displayed.
+    </p>
+    -->
+
+</body>
+</html>
+
+<!-- *------------------------------------- -->
+<!--* IMPORTANT NOTES -->
+<!-- *---------------------------------------- -->
+
+<!--
+
+<p>
+----
+Defines a paragraph.
+
+Example:
+
+<p>
+    This is a paragraph.
+</p>
+
+-------------------------------------------------
+
+Automatic Spacing
+-----------------
+
+Browsers automatically add space before
+and after every paragraph.
+
+-------------------------------------------------
+
+Using <br>
+----------
+
+The <br> tag inserts a line break
+without starting a new paragraph.
+
+Example:
+
+<p>
+
+    First Line
+
+    <br>
+
+    Second Line
+
+</p>
+
+-------------------------------------------------
+
+Using <strong>
+--------------
+
+The <strong> element represents text
+with strong importance.
+
+Browsers display it in bold by default.
+
+Example:
+
+<strong>
+    Important Text
+</strong>
+
+-------------------------------------------------
+
+HTML Comments
+-------------
+
+Comments are ignored by the browser.
+
+Example:
+
+<!-- This is a comment -->
+
+<!-- *------------------------------------- -->
+<!--* INTERVIEW QUESTIONS -->
+<!-- *---------------------------------------- -->
+
+<!--
+
+1. What is the purpose of the <p> tag?
+
+The <p> tag defines a paragraph
+of text in an HTML document.
+
+-------------------------------------------------
+
+2. Is the <p> element a block-level element?
+
+Yes.
+
+It starts on a new line and takes
+the full available width.
+
+-------------------------------------------------
+
+3. What is the difference between <p> and <br>?
+
+<p>
+Creates a new paragraph with spacing
+before and after it.
+
+<br>
+Creates only a line break
+without starting a new paragraph.
+
+-------------------------------------------------
+
+4. Can block-level elements be placed inside a <p> tag?
+
+No.
+
+A paragraph cannot contain block-level elements
+such as:
+
+<h1>
+<div>
+<section>
+<article>
+
+Doing so results in invalid HTML, and
+the browser automatically closes the
+paragraph before the block-level element.
+
+Example (Invalid):
+
+<p>
+
+    Hello
+
+    <h1>Heading</h1>
+
+</p>
+
+-------------------------------------------------
+
+5. What is the difference between <strong> and <b>?
+
+<strong>
+Adds semantic importance and is
+displayed in bold.
+
+<b>
+Only makes the text bold without
+adding semantic meaning.
+
+-------------------------------------------------
+
+6. Why are comments used in HTML?
+
+Comments are used to:
+
+• Explain the code.
+• Temporarily disable code.
+• Improve readability.
+
+Comments are not displayed by the browser.
+
+-->

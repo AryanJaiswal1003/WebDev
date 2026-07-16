@@ -1,0 +1,297 @@
+<!-- *------------------------------------- -->
+<!--* HTML IFRAME TAG (<iframe>) -->
+<!-- *---------------------------------------- -->
+
+<!--
+The <iframe> (Inline Frame) element is used to embed
+another webpage or external content inside the current webpage.
+
+Common Uses:
+1. Embedding YouTube videos.
+2. Embedding Google Maps.
+3. Displaying another webpage.
+4. Embedding online documents or forms.
+
+Note:
+Not every website allows embedding inside an iframe.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Iframe Tag</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:20px;
+            background:#f5f5f5;
+            line-height:1.8;
+        }
+
+        iframe{
+            border:1px solid #ccc;
+            border-radius:8px;
+            margin-bottom:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Iframe Examples</h1>
+
+    <p>
+        The <strong>&lt;iframe&gt;</strong> element embeds another webpage,
+        video, map, or document inside the current HTML page.
+    </p>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- YouTube Video -->
+    <!-- ============================= -->
+
+    <h2>1. Embed a YouTube Video</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/jNQXAC9IVRw"
+        title="YouTube Video Player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- Website -->
+    <!-- ============================= -->
+
+    <h2>2. Embed a Website</h2>
+
+    <iframe
+        src="https://www.wikipedia.org/"
+        width="100%"
+        height="400"
+        title="Wikipedia">
+    </iframe>
+
+    <p>
+        <strong>Note:</strong> Many websites (such as Google, ChatGPT, and most banking websites)
+        block embedding inside an iframe for security reasons.
+    </p>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- Google Maps -->
+    <!-- ============================= -->
+
+    <h2>3. Embed Google Maps</h2>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.26131732789!2d73.91411937534653!3d18.56225398253939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sPhoenix%20Marketcity%20Pune!5e0!3m2!1sen!2sin!4v1693563525384!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style="border:0;"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</body>
+</html>
+
+<!-- *------------------------------------- -->
+<!--* IMPORTANT ATTRIBUTES
+<!-- *---------------------------------------- -->
+
+<!--
+
+src
+---
+Specifies the URL of the page to embed.
+
+Example:
+
+src="https://example.com"
+
+-------------------------------------------------
+
+width
+-----
+Specifies the iframe width.
+
+Example:
+
+width="600"
+
+-------------------------------------------------
+
+height
+------
+Specifies the iframe height.
+
+Example:
+
+height="400"
+
+-------------------------------------------------
+
+title
+-----
+Provides a description for accessibility.
+
+Always include the title attribute.
+
+-------------------------------------------------
+
+allowfullscreen
+---------------
+Allows videos or other content
+to enter fullscreen mode.
+
+-------------------------------------------------
+
+loading
+-------
+Controls when the iframe loads.
+
+Values:
+
+eager (Default)
+
+lazy
+
+Example:
+
+loading="lazy"
+
+-------------------------------------------------
+
+referrerpolicy
+--------------
+Controls how much referrer information
+is sent when loading the iframe.
+
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* IMPORTANT NOTES
+<!-- *---------------------------------------- -->
+
+<!--
+
+1. Not every website can be embedded.
+
+Many websites block embedding using
+security headers such as:
+
+• X-Frame-Options
+• Content-Security-Policy (CSP)
+
+Examples:
+
+❌ Google Search
+
+❌ ChatGPT
+
+❌ Banking Websites
+
+✔ Google Maps
+
+✔ YouTube (Embed URL)
+
+✔ Wikipedia (when permitted)
+
+-------------------------------------------------
+
+2. YouTube Embedding
+
+Do NOT use the normal YouTube URL.
+
+❌
+
+https://www.youtube.com/watch?v=VIDEO_ID
+
+✔
+
+https://www.youtube.com/embed/VIDEO_ID
+
+-------------------------------------------------
+
+3. Google Maps
+
+Use the "Embed a map" option from
+Google Maps to obtain the iframe code.
+
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* INTERVIEW QUESTIONS
+<!-- *---------------------------------------- -->
+
+<!--
+
+1. What is an iframe?
+
+An iframe embeds another webpage or external
+content inside the current webpage.
+
+-------------------------------------------------
+
+2. What are common uses of an iframe?
+
+• YouTube Videos
+• Google Maps
+• Online Forms
+• Documents
+• Other Web Pages
+
+-------------------------------------------------
+
+3. Can every website be embedded in an iframe?
+
+No.
+
+Many websites block iframe embedding
+for security reasons.
+
+-------------------------------------------------
+
+4. Why is the title attribute important?
+
+It improves accessibility by helping
+screen readers describe the iframe.
+
+-------------------------------------------------
+
+5. What is the difference between a normal YouTube URL and an embed URL?
+
+Normal URL:
+
+https://www.youtube.com/watch?v=VIDEO_ID
+
+Embed URL:
+
+https://www.youtube.com/embed/VIDEO_ID
+
+-------------------------------------------------
+
+6. What is lazy loading in an iframe?
+
+loading="lazy"
+
+It delays loading the iframe until
+it is close to the user's viewport,
+improving page performance.
+
+-->

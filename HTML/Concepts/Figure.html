@@ -1,0 +1,186 @@
+<!-- *------------------------------------- -->
+<!--* HTML FIGURE TAG (<figure>)
+<!-- *---------------------------------------- -->
+
+<!--
+The <figure> tag is used to group self-contained content such as:
+
+1. Images
+2. Diagrams
+3. Illustrations
+4. Code snippets
+5. Videos
+6. Audio
+
+The <figcaption> tag provides a caption or description
+for the content inside the <figure>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Figure Tag</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:20px;
+            background:#f5f5f5;
+            line-height:1.6;
+        }
+
+        figure{
+            display:inline-block;
+            margin:20px 0;
+        }
+
+        img{
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,.2);
+        }
+
+        figcaption{
+            text-align:center;
+            font-style:italic;
+            margin-top:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Figure Tag Example</h1>
+
+    <p>
+        The <strong>&lt;figure&gt;</strong> element is used to group media
+        such as images, diagrams, videos, or code examples together with
+        a caption using the <strong>&lt;figcaption&gt;</strong> element.
+    </p>
+
+    <hr>
+
+    <figure>
+
+        <img
+            src="./images/html.png"
+            alt="HTML Logo"
+            width="350"
+            loading="lazy"
+        >
+
+        <figcaption>
+            HTML Logo with Caption
+        </figcaption>
+
+    </figure>
+
+    <p>
+        The caption helps describe the image and provides additional
+        context for users and search engines.
+    </p>
+
+</body>
+</html>
+
+<!-- *------------------------------------- -->
+<!--* HTML FIGURE TAG NOTES
+<!-- *---------------------------------------- -->
+
+<!--
+<figure>
+---------
+Represents self-contained content.
+
+Common Uses:
+• Images
+• Charts
+• Diagrams
+• Videos
+• Audio
+• Code Examples
+
+-------------------------------------------------
+
+<figcaption>
+--------------
+Provides a caption or description for the content
+inside the <figure> element.
+
+The caption can appear before or after the content,
+although placing it after the content is more common.
+
+-------------------------------------------------
+
+alt Attribute
+-------------
+Always provide meaningful alt text for images
+inside a <figure>.
+
+Example:
+
+<img
+    src="./images/html.png"
+    alt="HTML Logo"
+>
+
+-------------------------------------------------
+
+Benefits of <figure>
+
+• Improves semantic HTML.
+• Improves accessibility.
+• Improves SEO.
+• Groups related media with its description.
+-->
+
+
+
+<!-- *------------------------------------- -->
+<!--* INTERVIEW QUESTIONS
+<!-- *---------------------------------------- -->
+
+<!--
+1. What is the purpose of the <figure> tag?
+
+The <figure> tag groups self-contained content
+such as images, diagrams, videos, or code snippets.
+
+-------------------------------------------------
+
+2. What is the purpose of <figcaption>?
+
+The <figcaption> element provides a caption or
+description for the content inside the <figure> element.
+
+-------------------------------------------------
+
+3. Can a <figure> exist without a <figcaption>?
+
+Yes.
+
+The <figcaption> element is optional.
+
+-------------------------------------------------
+
+4. Why should images inside a <figure> have an alt attribute?
+
+The alt attribute:
+• Improves accessibility.
+• Helps screen readers.
+• Displays text if the image fails to load.
+• Improves SEO.
+
+-------------------------------------------------
+
+5. What types of content can be placed inside a <figure>?
+
+Examples include:
+• Images
+• Charts
+• Diagrams
+• Videos
+• Audio
+• Code snippets
+-->
